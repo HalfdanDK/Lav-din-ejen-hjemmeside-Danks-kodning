@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>LogIn | Min hjemmeside</title>
+</head>
+<body>
+<center><h1 id="welcomeText">Velkommen, venligst login her!</h1></center>
+<center>
+Brugernavn: <input type="text" id="user" placeholder="Brugernavn">
+<br>
+Kodeord: <input type="password" id="pass" placeholder="Kode">
+<br>
+<button onclick="login()">Login</button>
+</center>
+
+<script>
+function login(){
+	 var password = document.getElementById("pass").value;
+	 var username = document.getElementById("user").value;
+	 if (username == "admin" & password == "admin"){
+		alert("Yes!");
+		//document.getElementById("welcomeText").innerHTML = "Velkommen, du er nu logged in!";
+		document.location = "home.html";
+	 } else{
+		alert("Nope!");
+	 }
+}
+</script>
+
+</body>
+</html>
